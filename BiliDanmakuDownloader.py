@@ -251,6 +251,7 @@ if __name__ == "__main__":
         # 获取视频元数据
         video_info = get_video_info(BVID)
         logging.info(f"视频信息获取成功: {video_info['title']}")
+        logging.info(f"cid: {video_info['oid']}, avid: {video_info['pid']}")
 
         # 获取弹幕数据
         danmaku_list = get_all_danmaku(video_info["oid"], video_info["pid"])
